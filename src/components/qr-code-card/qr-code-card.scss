@@ -1,0 +1,53 @@
+@use 'sass:map';
+@use '../color-palette.scss' as cp;
+@use '../breakpoints.scss' as bp;
+
+.qr-code-card {
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  display: block;
+  margin: 0;
+  outline: none;
+  border: none;
+  border-radius: 1em;
+  padding: 1em 1em 3em 1em;
+  width: 85vw;
+  height: fit-content;
+  background-color: map.get(cp.$color-palette, 'white');
+
+  @media screen and (min-width: #{map.get(bp.$breakpoints, 'extra-small')}) {
+    & {
+      width: 70vw;
+    }
+  }
+
+  @media screen and (min-width: #{map.get(bp.$breakpoints, 'small')}) {
+    & {
+      width: 50vw;
+    }
+  }
+
+  @media screen and (min-width: #{map.get(bp.$breakpoints, 'medium')}) {
+    & {
+      width: 40vw;
+    }
+  }
+
+  @media screen and (min-width: #{map.get(bp.$breakpoints, 'large')}) {
+    & {
+      width: 30vw;
+    }
+  }
+
+  @media screen and (min-width: #{map.get(bp.$breakpoints, 'extra-large')}) {
+    & {
+      width: 25vw;
+    }
+  }
+
+  @media screen and (min-width: #{map.get(bp.$breakpoints, 'extra-extra-large')}) {
+    & {
+      width: 25vw;
+    }
+  }
+}

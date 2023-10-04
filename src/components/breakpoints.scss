@@ -1,0 +1,11 @@
+@use 'sass:math';
+@use './font-size.scss' as fs;
+
+$breakpoints: (
+  'extra-small': math.div(375px, fs.$font-size-base) * 1em,
+  'small': math.div(576px, fs.$font-size-base) * 1em,
+  'medium': math.div(768px, fs.$font-size-base) * 1em,
+  'large': math.div(992px, fs.$font-size-base) * 1em,
+  'extra-large': math.div(1200px, fs.$font-size-base) * 1em,
+  'extra-extra-large': math.div(1400px, fs.$font-size-base) * 1em,
+);

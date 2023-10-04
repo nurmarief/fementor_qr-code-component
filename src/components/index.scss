@@ -1,0 +1,18 @@
+@forward './qr-code-card/index.scss';
+@forward './qr-code-main/index.scss';
+@use './font-size.scss' as fs;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+html {
+  font-size: fs.$font-size-base;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  border: none;
+  padding: 0;
+}

@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use '../../breakpoints.scss' as bp;
+@use '../../color-palette.scss' as cp;
+
+.qr-code-card__title {
+  font-size: 1.4em;
+  font-family: inherit;
+  line-height: 1.2;
+  display: block;
+  margin: 1em 0;
+  outline: none;
+  border: none;
+  padding: 0 0.5em;
+  color: map.get(cp.$color-palette, 'dark-blue');
+
+  @media screen and (min-width: #{map.get(bp.$breakpoints, 'small')}) {
+    & {
+      font-size: 1.5em;
+    }
+  }
+
+  @media screen and (min-width: #{map.get(bp.$breakpoints, 'extra-extra-large')}) {
+    & {
+      font-size: 1.6em;
+    }
+  }
+}

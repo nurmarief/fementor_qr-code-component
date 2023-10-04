@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use '../color-palette.scss' as cp;
+
+.qr-code-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  background-color: map.get(cp.$color-palette, 'light-gray');
+}
